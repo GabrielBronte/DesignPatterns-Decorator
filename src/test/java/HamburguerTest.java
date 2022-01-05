@@ -12,21 +12,18 @@ class HamburguerTest {
     @Test
     void deveRetornarDescricaoHamburguerDeFrangoComBacon() {
         Hamburguer hamburguer = new Bacon(new Frango());
-
         assertEquals("Hamburguer de frango, Bacon extra", hamburguer.getDescricao());
     }
 
     @Test
     void deveRetornarDescricaoHamburguerDeFrangoComQueijo() {
         Hamburguer hamburguer = new Queijo(new Frango());
-
         assertEquals("Hamburguer de frango, Queijo extra", hamburguer.getDescricao());
     }
 
     @Test
     void deveRetornarDescricaoHamburguerDeFrangoComQueijoeBacon() {
         Hamburguer hamburguer = new Bacon(new Queijo(new Frango()));
-
         assertEquals("Hamburguer de frango, Queijo extra, Bacon extra", hamburguer.getDescricao());
     }
 
@@ -63,21 +60,18 @@ class HamburguerTest {
     @Test
     void deveRetornarDescricaoHamburguerDeCarneComBacon() {
         Hamburguer hamburguer = new Bacon(new Carne());
-
         assertEquals("Hamburguer de carne, Bacon extra", hamburguer.getDescricao());
     }
 
     @Test
     void deveRetornarDescricaoHamburguerDeCarneComQueijo() {
         Hamburguer hamburguer = new Queijo(new Carne());
-
         assertEquals("Hamburguer de carne, Queijo extra", hamburguer.getDescricao());
     }
 
     @Test
     void deveRetornarDescricaoHamburguerDeCarneComQueijoeBacon() {
         Hamburguer hamburguer = new Bacon(new Queijo(new Carne()));
-
         assertEquals("Hamburguer de carne, Queijo extra, Bacon extra", hamburguer.getDescricao());
     }
 
